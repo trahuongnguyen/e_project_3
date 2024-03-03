@@ -68,6 +68,10 @@ body {
   outline: 0 !important;
 }
 
+.about-us-font{
+  font-family: "Roboto", sans-serif;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -2984,6 +2988,20 @@ input[type="button"].btn-block {
 
 .collapse:not(.show) {
   display: none;
+}
+
+@media (max-width: 992px){
+  .display-inline{
+    display: inline !important;
+  }
+  
+  .flex-direction-row .nav-item {
+    width: 20%;
+  }
+  
+  .flex-direction-row {
+    flex-direction: row !important;
+  }
 }
 
 .collapsing {
