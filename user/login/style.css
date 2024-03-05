@@ -2,20 +2,53 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.wrapper {
-    background: #ececec;
-    padding: 0 20px 0 20px;
+.hidden {
+    /* visibility: hidden; */
+    display: none;
 }
 
-.main {
+.modal-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    max-height: 600px;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 1500;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1300;
+}
+
+
+.wrapper-login {
+    background: #ececec;
+    padding: 0;
+}
+
+.main-login {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 
 }
 
-.row {
+.row-login {
     width: 800px;
     height: 600px;
     border-radius: 10px;
@@ -23,7 +56,7 @@
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-.side-image {
+.side-image-login {
     background-image: url("../img/login.jpg");
     /* background-position: center; */
     background-size: cover;
@@ -36,7 +69,7 @@
 }
 
 
-.close-modal {
+.close-modal-login {
     position: absolute;
     top: 0.2rem;
     right: 1rem;
@@ -64,33 +97,33 @@ i {
     font-size: 15px;
 }
 
-.right {
+.right-login {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.input-box {
+.input-box-login {
     width: 350px;
     box-sizing: border-box;
 }
 
-.input-box h1 {
+.input-box-login h1 {
     font-weight: 700;
     text-align: center;
     margin-bottom: 45px;
 
 }
 
-.input-field {
+.input-field-login {
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 0 10px 0 10px;
 }
 
-.input {
+.input-login {
     height: 45px;
     width: 100%;
     background: transparent;
@@ -102,7 +135,7 @@ i {
 
 }
 
-.input-box .input-field label {
+.input-box-login .input-field-login label {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -110,25 +143,25 @@ i {
     transform: .5s;
 }
 
-.input-field .input:focus~label {
+.input-field-login .input-login:focus~label {
     top: -10px;
     font-size: 13px;
 
 }
 
-.input-field .input:valid~label {
+.input-field-login .input-login:valid~label {
     top: -10px;
     font-size: 13px;
     color: #5d5076;
 }
 
-.input-field .input:focus,
+.input-field-login .input-login:focus,
 .input-field .input:valid {
     border-bottom: 1px solid #743ae1;
 
 }
 
-.submit {
+.submit-login {
     border: none;
     outline: none;
     height: 45px;
@@ -137,12 +170,12 @@ i {
     transition: .4s;
 }
 
-.submit:hover {
+.submit-login:hover {
     background: #F75813;
     color: #fff;
 }
 
-.signup {
+.signup-login {
     text-align: center;
     font-size: small;
     margin-top: 25px;
@@ -160,13 +193,13 @@ span a:hover {
     color: #000;
 }
 
-.logo-image{
+.logo-image {
     width: 70px;
     position: absolute;
     display: block;
 }
 
-.logo-text{
+.logo-text {
     width: 200px;
     position: relative;
     top: 20px;
@@ -180,8 +213,9 @@ span a:hover {
     width: fit-content;
 }
 
+
 @media only screen and (max-width: 768px) {
-    .side-image {
+    .side-image-login {
         /* border-radius: 10px 10px 0 0; */
         max-height: 0px;
         visibility: hidden;
@@ -193,22 +227,22 @@ span a:hover {
         top: 20px;
         left: 35%;
     } */
-    .text {
+    /* .text-login {
         position: auto;
         top: 50%;
         text-align: center;
     }
 
-    .text p,
+    .text-login p,
     i {
         font-size: 17px;
-    }
+    } */
 
-    .row {
+    .row-login {
         max-width: 420px;
     }
 
-    .right {
+    .right-login {
         height: 600px;
         justify-content: center;
         align-items: center;
