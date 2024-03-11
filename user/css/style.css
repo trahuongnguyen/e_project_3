@@ -342,7 +342,7 @@ a:not([href]):not([class]):hover {
 .xMDeox {
   position: relative;
   flex-grow: 1;
-  width: 980px;
+  width: 800px;
   box-sizing: border-box;
   margin-left: 1.6875rem;
   min-width: 0;
