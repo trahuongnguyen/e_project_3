@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e5150d447b6547ddae22c12ee63148c1" Name="Diagram1">
+        <EntityTypeShape EntityType="project3Model.AboutU" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Auction" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Bid" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Category" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Customer" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Employee" Width="1.5" PointX="0.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Function" Width="1.5" PointX="3.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Group" Width="1.5" PointX="6" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Image" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Message" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Notification" Width="1.5" PointX="3.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Order" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Product" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Rating" Width="1.5" PointX="8.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.REL_Pro_Au" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Review" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="project3Model.Status" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
+        <AssociationConnector Association="project3Model.FK__Auction__em_ID__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__REL_Pro_A__au_ID__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Bids__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Bids__cus_ID__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Category__Parent__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Messages__cus_ID__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Orders__cus_ID__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Product__cus_ID__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Images__pro_ID__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Orders__pro_ID__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Rating__or_ID__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Review__or_ID__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__Product__sta_ID__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.FK__REL_Pro_A__pro_I__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.REL_Em_Gru" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.REL_Fu_Gru" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.REL_Or_Me" ManuallyRouted="false" />
+        <AssociationConnector Association="project3Model.REL_Pro_Cat" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
