@@ -13,7 +13,7 @@ namespace project3.User.Controllers.User
 {
     public class ProductsController : Controller
     {
-        private dbauctionsystemEntities2 db = new dbauctionsystemEntities2();
+        private dbauctionsystemEntities db = new dbauctionsystemEntities();
 
         // GET: Products
         public ActionResult Index()

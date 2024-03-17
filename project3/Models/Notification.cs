@@ -22,7 +22,7 @@ namespace project3.Models
     
         public int no_ID { get; set; }
         public string NameNo { get; set; }
-        public Nullable<System.DateTime> Time { get; set; }
+        public System.DateTime Time { get; set; }
         public string NoDetails { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

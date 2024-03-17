@@ -27,9 +27,9 @@ namespace project3.Models
         public string NamePro { get; set; }
         public double StartingPrice { get; set; }
         public double StepPrice { get; set; }
-        public Nullable<System.DateTime> StartTime { get; set; }
-        public Nullable<System.DateTime> EndTime { get; set; }
-        public System.DateTime ReceivedDate { get; set; }
+        public System.DateTime StartTime { get; set; }
+        public System.DateTime EndTime { get; set; }
+        public string ReceivedDate { get; set; }
         public string Description { get; set; }
         public Nullable<int> cus_ID { get; set; }
         public string MoreInformation { get; set; }
