@@ -20,11 +20,11 @@
                         <label for="floatingInput">Category Name</label>
                     </div>
                     <div class="form-floating mb-3">
-                        @Html.DropDownListFor(m => m.Parent_ID, (SelectList)ViewBag.Parent_ID, "selected", new { @class = "form-select bg-gray border-0" })
+                        @Html.DropDownListFor(m => m.Parent_ID, (SelectList) ViewBag.Parent_ID, "selected", new { @class = "form-select bg-gray border-0" })
                         <label for="floatingSelect">Choose Parent Category</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" name="Characteristic" class="form-control bg-gray border-0" id="floatingPassword"
+                        <input type="text" name="Characteristic" class="form-control bg-gray border-0" id="floatingPassword"
                                placeholder="Description">
                         <label for="floatingPassword">Description</label>
                     </div>
