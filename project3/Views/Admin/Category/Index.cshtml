@@ -41,7 +41,7 @@
         <td>
             @if(Model!=null && item.Image != null && item.Image.Length > 0)
                 {
-                    <img src="data:image; base64, @System.Convert.ToBase64String(item.Image)"/>
+                    <img src="data:image; base64, @System.Convert.ToBase64String(item.Image)" width="80" height="80"/>
                 }
         </td>
         <td>
