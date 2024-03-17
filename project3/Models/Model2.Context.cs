@@ -13,10 +13,10 @@ namespace project3.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbauctionsystemEntities2 : DbContext
+    public partial class dbauctionsystemEntities : DbContext
     {
-        public dbauctionsystemEntities2()
-            : base("name=dbauctionsystemEntities2")
+        public dbauctionsystemEntities()
+            : base("name=dbauctionsystemEntities")
         {
         }
     
@@ -39,7 +39,7 @@ namespace project3.Models
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Rating> Ratings { get; set; }
-        public virtual DbSet<REL_Pro_Au> REL_Pro_Au { get; set; }
+        public virtual DbSet<REL_Pro_Au> REL_Pro_Aus { get; set; }
         public virtual DbSet<Review> Reviews { get; set; }
         public virtual DbSet<Status> Status { get; set; }
     }

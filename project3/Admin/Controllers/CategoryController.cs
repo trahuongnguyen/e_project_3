@@ -13,7 +13,7 @@ namespace project3.Admin.Controllers
 {
     public class CategoryController : Controller
     {
-        private dbauctionsystemEntities2 db = new dbauctionsystemEntities2();
+        private dbauctionsystemEntities db = new dbauctionsystemEntities();
 
         // GET: Category
         public ActionResult Index()
