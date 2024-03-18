@@ -1,0 +1,151 @@
+﻿@model IEnumerable<project3.Models.Product>
+
+@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="text-center p-4">
+        <h1>Products Management</h1>
+    </div>
+</div>
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-gray text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Ignore Products</h6>
+            <form method="post">
+                <input type="button" value="Show Add" />
+            </form>
+        </div>
+        <div class="table-responsive">
+            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">Name</th>
+                        <th scope="col">Time Received</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                        <th scope="col">Start Price</th>
+                        <th scope="col">Price Step</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (ViewBag.Listpro != null) { 
+                        foreach (project3.Models.Product item in ViewBag.Listpro)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NamePro)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ReceivedDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Customer.FirstName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Categories)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StartTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.EndTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StartingPrice)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StepPrice)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Description)
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                <td>@Html.ActionLink("Details", "Details", new { id = item.pro_ID })</td>
+
+                            </tr>
+
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-gray text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Inspected Products</h6>
+            <form method="post">
+                <input type="button" value="Show Add" />
+            </form>
+        </div>
+        <div class="table-responsive">
+            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">Auction</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                        <th scope="col">Invoice</th>
+                        <th scope="col">Current Price</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NamePro)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StartingPrice)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StepPrice)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StartTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.EndTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ReceivedDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Description)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MoreInformation)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Customer.FirstName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Status.StatusDetails)
+                                </td>
+                                <td>
+
+                            </tr>
+                        }
+                    }
+                    </tbody>
+            </table>
+        </div>
+    </div>
+</div>

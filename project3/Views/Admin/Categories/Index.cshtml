@@ -41,7 +41,7 @@
         <td>
             @if(Model!=null && item.Image != null && item.Image.Length > 0)
                 {
-                    <img src="data:image; base64, @System.Convert.ToBase64String(item.Image)" width="80" height="80"/>
+                    <img src="data:image; base64, @System.Convert.ToBase64String(item.Image)" width="80px" height="80px"/>
                 }
         </td>
         <td>
@@ -52,7 +52,6 @@
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.cat_ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.cat_ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.cat_ID })
         </td>
     </tr>
