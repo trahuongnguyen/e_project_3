@@ -49,11 +49,11 @@ namespace project3.User.Controllers.User
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "pro_ID,NamePro,StartingPrice,StepPrice,StartTime,EndTime,ReceivedDate,Description,cus_ID,MoreInformation,sta_ID")] Product product, IEnumerable<HttpPostedFileBase> Images)
+        public ActionResult Create([Bind(Include = "pro_ID,NamePro,StartingPrice,StepPrice,StartTime,EndTime,ReceivedDate,Description,cus_ID,MoreInformation,sta_ID")] Product product, IEnumerable<HttpPostedFileBase> Images, IEnumerable<int> cat_IDs)
         {
             if (ModelState.IsValid)
             {
-                if(Images != null)
+                if (Images != null)
                 {
                     foreach (var item in Images)
                     {
@@ -61,40 +61,53 @@ namespace project3.User.Controllers.User
                         {
                             if (!Path.GetExtension(item.FileName).ToLower().Equals(".png") && !Path.GetExtension(item.FileName).ToLower().Equals(".jpg"))
                             {
-                                ModelState.AddModelError("Image", "Please choose file type .png or .jpg");
+                                ModelState.AddModelError("", "Please choose file type .png or .jpg");
                                 return View(product);
                             }
                             if (item.ContentLength > 300000)
                             {
-                                ModelState.AddModelError("Image", "This File is out of 300KB");
+                                ModelState.AddModelError("", "This File is out of 300KB");
                                 return View(product);
-                            }
-                            db.Products.Add(product);
-                            db.SaveChanges();
-                            Product product1 = db.Products.FirstOrDefault(p=>p.pro_ID == db.Products.Max(pro=>pro.pro_ID));
-
-                            try
-                            {
-                                using (var binaryReader = new BinaryReader(item.InputStream))
-                                {
-                                    Image imgs = new Image();
-                                    imgs.Img = binaryReader.ReadBytes(item.ContentLength);
-                                    imgs.pro_ID = product1.pro_ID;
-                                }
-                            }
-                            catch (Exception)
-                            {
-
-                                throw;
                             }
                         }
                     }
                 }
-                
+                foreach (var item in cat_IDs)
+                {
+                    Category cat = db.Categories.FirstOrDefault(c => c.cat_ID == item);
+                    product.Categories.Add(cat);
+                }
+                db.Products.Add(product);
+                db.SaveChanges();
+                Product product1 = db.Products.FirstOrDefault(p => p.pro_ID == db.Products.Max(pro => pro.pro_ID));
+                foreach (var item in cat_IDs)
+                {
+                    Category cat = db.Categories.FirstOrDefault(c => c.cat_ID == item);
+                    cat.Products.Add(product1);
+                    db.SaveChanges();
+                }
+                foreach (var item in Images)
+                {
+                    try
+                    {
+                        using (var binaryReader = new BinaryReader(item.InputStream))
+                        {
+                            Image imgs = new Image();
+                            imgs.Img = binaryReader.ReadBytes(item.ContentLength);
+                            imgs.pro_ID = product1.pro_ID;
+                            db.Images.Add(imgs);
+                            db.SaveChanges();
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction("Index");
             }
 
-            ViewBag.cat_ID = new SelectList(db.Categories, "cat_ID", "NameCat");
+            ViewBag.cat_ID = new SelectList(db.Categories, "cat_ID", "NameCat", cat_IDs);
             return View(product);
         }
 
