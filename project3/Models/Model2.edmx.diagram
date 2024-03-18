@@ -4,42 +4,42 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="8a9f8474e5e248628b83cecc224f6b81" Name="Diagram1">
-        <EntityTypeShape EntityType="dbauctionsystemModel1.AboutU" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Auction" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Bid" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Category" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Customer" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Employee" Width="1.5" PointX="0.75" PointY="16.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Function" Width="1.5" PointX="3.75" PointY="23.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Group" Width="1.5" PointX="6" PointY="17.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Image" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Message" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Notification" Width="1.5" PointX="3.75" PointY="20.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Order" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Product" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Rating" Width="1.5" PointX="8.25" PointY="7.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.REL_Pro_Au" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Review" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbauctionsystemModel1.Status" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Auction__em_ID__5CD6CB2B" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__REL_Pro_A__au_ID__6C190EBB" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Bids__5DCAEF64" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Bids__cus_ID__5EBF139D" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Category__Parent__70DDC3D8" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Messages__cus_ID__60A75C0F" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Orders__cus_ID__628FA481" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Product__cus_ID__6383C8BA" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Images__pro_ID__5FB337D6" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Orders__pro_ID__619B8048" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Rating__or_ID__656C112C" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Review__or_ID__6FE99F9F" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__Product__sta_ID__6477ECF3" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.FK__REL_Pro_A__pro_I__6D0D32F4" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.REL_Em_Gru" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.REL_Fu_Gru" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.REL_Or_Me" ManuallyRouted="false" />
-        <AssociationConnector Association="dbauctionsystemModel1.REL_Pro_Cat" ManuallyRouted="false" />
+      <Diagram DiagramId="f31fd21d1bfb4263a1461422f2855f62" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="dbauctionsystemModel.AboutU" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Auction" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Bid" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Category" Width="1.5" PointX="6" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Customer" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Employee" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Function" Width="1.5" PointX="6" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Group" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Image" Width="1.5" PointX="10.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Message" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Notification" Width="1.5" PointX="3.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Order" Width="1.5" PointX="6" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Product" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Rating" Width="1.5" PointX="8.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.REL_Pro_Au" Width="1.5" PointX="10.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Review" Width="1.5" PointX="8.25" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbauctionsystemModel.Status" Width="1.5" PointX="6" PointY="17.5" IsExpanded="true" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Auction__em_ID__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__REL_Pro_A__au_ID__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Bids__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Bids__cus_ID__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Category__Parent__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Messages__cus_ID__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Orders__cus_ID__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Product__cus_ID__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Images__pro_ID__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Rating__or_ID__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Review__or_ID__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__Product__sta_ID__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.FK__REL_Pro_A__pro_I__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.REL_Em_Gru" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.REL_Fu_Gru" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.REL_Or_Me" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.REL_Or_Pro" ManuallyRouted="false" />
+        <AssociationConnector Association="dbauctionsystemModel.REL_Pro_Cat" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

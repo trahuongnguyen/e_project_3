@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="dbauctionsystemModel1StoreContainer" CdmEntityContainer="dbauctionsystemEntities3">
+  <EntityContainerMapping StorageEntityContainer="dbauctionsystemModelStoreContainer" CdmEntityContainer="dbauctionsystemEntities">
     <EntitySetMapping Name="AboutUs">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.AboutU">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.AboutU">
         <MappingFragment StoreEntitySet="AboutUs">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Address" ColumnName="Address" />
@@ -13,7 +13,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Auctions">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Auction">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Auction">
         <MappingFragment StoreEntitySet="Auction">
           <ScalarProperty Name="au_ID" ColumnName="au_ID" />
           <ScalarProperty Name="NameAu" ColumnName="NameAu" />
@@ -24,7 +24,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Bids">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Bid">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Bid">
         <MappingFragment StoreEntitySet="Bids">
           <ScalarProperty Name="bid_ID" ColumnName="bid_ID" />
           <ScalarProperty Name="Time" ColumnName="Time" />
@@ -36,7 +36,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Categories">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Category">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Category">
         <MappingFragment StoreEntitySet="Category">
           <ScalarProperty Name="cat_ID" ColumnName="cat_ID" />
           <ScalarProperty Name="NameCat" ColumnName="NameCat" />
@@ -48,7 +48,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Customers">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Customer">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Customer">
         <MappingFragment StoreEntitySet="Customer">
           <ScalarProperty Name="cus_ID" ColumnName="cus_ID" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
@@ -65,7 +65,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Employees">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Employee">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Employee">
         <MappingFragment StoreEntitySet="Employee">
           <ScalarProperty Name="em_ID" ColumnName="em_ID" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
@@ -81,7 +81,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Functions">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Function">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Function">
         <MappingFragment StoreEntitySet="Functions">
           <ScalarProperty Name="fu_ID" ColumnName="fu_ID" />
           <ScalarProperty Name="NameFu" ColumnName="NameFu" />
@@ -90,7 +90,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Groups">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Group">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Group">
         <MappingFragment StoreEntitySet="Groups">
           <ScalarProperty Name="gru_ID" ColumnName="gru_ID" />
           <ScalarProperty Name="NameGr" ColumnName="NameGr" />
@@ -99,7 +99,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Images">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Image">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Image">
         <MappingFragment StoreEntitySet="Images">
           <ScalarProperty Name="im_ID" ColumnName="im_ID" />
           <ScalarProperty Name="Img" ColumnName="Img" />
@@ -108,7 +108,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Messages">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Message">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Message">
         <MappingFragment StoreEntitySet="Messages">
           <ScalarProperty Name="me_ID" ColumnName="me_ID" />
           <ScalarProperty Name="NameMe" ColumnName="NameMe" />
@@ -119,7 +119,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Notifications">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Notification">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Notification">
         <MappingFragment StoreEntitySet="Notifications">
           <ScalarProperty Name="no_ID" ColumnName="no_ID" />
           <ScalarProperty Name="NameNo" ColumnName="NameNo" />
@@ -129,17 +129,16 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Orders">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Order">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Order">
         <MappingFragment StoreEntitySet="Orders">
           <ScalarProperty Name="or_ID" ColumnName="or_ID" />
           <ScalarProperty Name="MoreInformation" ColumnName="MoreInformation" />
           <ScalarProperty Name="cus_ID" ColumnName="cus_ID" />
-          <ScalarProperty Name="pro_ID" ColumnName="pro_ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Product">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Product">
         <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="pro_ID" ColumnName="pro_ID" />
           <ScalarProperty Name="NamePro" ColumnName="NamePro" />
@@ -156,7 +155,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Ratings">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Rating">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Rating">
         <MappingFragment StoreEntitySet="Rating">
           <ScalarProperty Name="ra_ID" ColumnName="ra_ID" />
           <ScalarProperty Name="Star" ColumnName="Star" />
@@ -165,7 +164,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="REL_Pro_Au">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.REL_Pro_Au">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.REL_Pro_Au">
         <MappingFragment StoreEntitySet="REL_Pro_Au">
           <ScalarProperty Name="pro_ID" ColumnName="pro_ID" />
           <ScalarProperty Name="au_ID" ColumnName="au_ID" />
@@ -173,7 +172,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Reviews">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Review">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Review">
         <MappingFragment StoreEntitySet="Review">
           <ScalarProperty Name="re_ID" ColumnName="re_ID" />
           <ScalarProperty Name="Star" ColumnName="Star" />
@@ -183,7 +182,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Status">
-      <EntityTypeMapping TypeName="dbauctionsystemModel1.Status">
+      <EntityTypeMapping TypeName="dbauctionsystemModel.Status">
         <MappingFragment StoreEntitySet="Status">
           <ScalarProperty Name="sta_ID" ColumnName="sta_ID" />
           <ScalarProperty Name="StatusDetails" ColumnName="StatusDetails" />
@@ -191,7 +190,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="REL_Em_Gru" TypeName="dbauctionsystemModel1.REL_Em_Gru" StoreEntitySet="REL_Em_Gru">
+    <AssociationSetMapping Name="REL_Em_Gru" TypeName="dbauctionsystemModel.REL_Em_Gru" StoreEntitySet="REL_Em_Gru">
       <EndProperty Name="Employee">
         <ScalarProperty Name="em_ID" ColumnName="em_ID" />
       </EndProperty>
@@ -199,7 +198,7 @@
         <ScalarProperty Name="gru_ID" ColumnName="gru_ID" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="REL_Fu_Gru" TypeName="dbauctionsystemModel1.REL_Fu_Gru" StoreEntitySet="REL_Fu_Gru">
+    <AssociationSetMapping Name="REL_Fu_Gru" TypeName="dbauctionsystemModel.REL_Fu_Gru" StoreEntitySet="REL_Fu_Gru">
       <EndProperty Name="Functions">
         <ScalarProperty Name="fu_ID" ColumnName="fu_ID" />
       </EndProperty>
@@ -207,7 +206,7 @@
         <ScalarProperty Name="gru_ID" ColumnName="gru_ID" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="REL_Or_Me" TypeName="dbauctionsystemModel1.REL_Or_Me" StoreEntitySet="REL_Or_Me">
+    <AssociationSetMapping Name="REL_Or_Me" TypeName="dbauctionsystemModel.REL_Or_Me" StoreEntitySet="REL_Or_Me">
       <EndProperty Name="Notifications">
         <ScalarProperty Name="no_ID" ColumnName="no_ID" />
       </EndProperty>
@@ -215,7 +214,15 @@
         <ScalarProperty Name="or_ID" ColumnName="or_ID" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="REL_Pro_Cat" TypeName="dbauctionsystemModel1.REL_Pro_Cat" StoreEntitySet="REL_Pro_Cat">
+    <AssociationSetMapping Name="REL_Or_Pro" TypeName="dbauctionsystemModel.REL_Or_Pro" StoreEntitySet="REL_Or_Pro">
+      <EndProperty Name="Orders">
+        <ScalarProperty Name="or_ID" ColumnName="or_ID" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="pro_ID" ColumnName="pro_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="REL_Pro_Cat" TypeName="dbauctionsystemModel.REL_Pro_Cat" StoreEntitySet="REL_Pro_Cat">
       <EndProperty Name="Category">
         <ScalarProperty Name="cat_ID" ColumnName="cat_ID" />
       </EndProperty>
